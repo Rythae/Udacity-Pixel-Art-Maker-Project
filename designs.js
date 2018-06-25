@@ -35,6 +35,10 @@ submitButton.click(function(e) {
 		 	$("td").click(function() {
 		 		$(this).css("background-color", colorPicker.val());
 	 	});
+		 //Double-click to reset color to default white
+			table.on('dblclick', 'td', function () {
+				$(this).css('background-color', '#ffffff');
+	    });
 	 		
 	 }
 
